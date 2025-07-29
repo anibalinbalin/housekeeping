@@ -11,37 +11,35 @@ export function SectionSolution() {
         <span>SERVICIOS INCLUIDOS</span>
       </div>
       <div className="flex flex-col min-h-screen justify-center container">
-        <div className="grid md:grid-cols-[1.5fr,1fr] gap-12 px-4 md:px-0 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
-          <div className="flex flex-col gap-6 h-full">
-            <div className="grid md:grid-cols-2 gap-6 h-full">
-              <div className="h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-8 pt-8 pb-6">
+        <div className="grid md:grid-cols-[1.5fr,1fr] gap-6 md:gap-12 px-4 md:px-0 pt-20 md:pt-0">
+          <div className="flex flex-col gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="min-h-[250px] md:h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-6 md:px-8 pt-6 md:pt-8 pb-4 md:pb-6">
                 <div className="flex flex-col items-center gap-4">
                   <HomeIcon
-                    width={76}
-                    height={76}
+                    className="w-12 h-12 md:w-[76px] md:h-[76px]"
                     style={{ color: "#e6e5e5" }}
                   />
-                  <h2 className="text-xl">Supervisión y Preparación</h2>
+                  <h2 className="text-lg md:text-xl">Supervisión y Preparación</h2>
                 </div>
-                <div className="text-[#878787] text-xs text-left space-y-1">
+                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
                   <div>• Optimización integral de la casa antes de cada llegada.</div>
                   <div>• Verificación de limpieza realizada por Margarita.</div>
                   <div>• Confirmación de stock y orden doméstico esencial.</div>
                   <div>• Compras previas según criterios familiares con sugerencias nutricionales si se requieren.</div>
-                  <div>• Control claro de las facturas y pagos con proveedores.</div>
+                  <div>• Control claro de las facturas y pagos.</div>
                 </div>
               </div>
 
-              <div className="h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-8 pt-8 pb-6">
+              <div className="min-h-[250px] md:h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-6 md:px-8 pt-6 md:pt-8 pb-4 md:pb-6">
                 <div className="flex flex-col items-center gap-4">
                   <MixerHorizontalIcon
-                    width={76}
-                    height={76}
+                    className="w-12 h-12 md:w-[76px] md:h-[76px]"
                     style={{ color: "#e6e5e5" }}
                   />
-                  <h2 className="text-xl">Control Ambiental</h2>
+                  <h2 className="text-lg md:text-xl">Control Ambiental</h2>
                 </div>
-                <div className="text-[#878787] text-xs text-left space-y-1">
+                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
                   <div>• Control de humedad y ventilación de ambientes.</div>
                   <div>• Optimización horaria del uso de bomba de piscina.</div>
                   <div>• Control de iluminación exterior.</div>
@@ -50,17 +48,16 @@ export function SectionSolution() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 h-full">
-              <div className="h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-8 pt-8 pb-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="min-h-[250px] md:h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-6 md:px-8 pt-6 md:pt-8 pb-4 md:pb-6">
                 <div className="flex flex-col items-center gap-4">
                   <CheckCircledIcon
-                    width={76}
-                    height={76}
+                    className="w-12 h-12 md:w-[76px] md:h-[76px]"
                     style={{ color: "#e6e5e5" }}
                   />
-                  <h2 className="text-xl">Coordinación Técnica</h2>
+                  <h2 className="text-lg md:text-xl">Coordinación Técnica</h2>
                 </div>
-                <div className="text-[#878787] text-xs text-left space-y-1">
+                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
                   <div>• Supervisión de jardinería y piscina.</div>
                   <div>• Control de fumigación / plagas.</div>
                   <div>• Coordinación de servicios técnicos frente a desgastes normales de una casa.</div>
@@ -68,16 +65,15 @@ export function SectionSolution() {
                 </div>
               </div>
 
-              <div className="h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-8 pt-8 pb-6">
+              <div className="min-h-[250px] md:h-[300px] flex border flex-col justify-between border-border bg-[#121212] px-6 md:px-8 pt-6 md:pt-8 pb-4 md:pb-6">
                 <div className="flex flex-col items-center gap-4">
                   <PersonIcon
-                    width={76}
-                    height={76}
+                    className="w-12 h-12 md:w-[76px] md:h-[76px]"
                     style={{ color: "#e6e5e5" }}
                   />
-                  <h2 className="text-xl">Gestión de Personal</h2>
+                  <h2 className="text-lg md:text-xl">Gestión de Personal</h2>
                 </div>
-                <div className="text-[#878787] text-xs text-left space-y-1">
+                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
                   <div>• Supervisión del personal tercerizado.</div>
                   <div>• Coordinación operativa de tareas.</div>
                   <div>• Relacionamiento correcto con proveedores y terceros.</div>
@@ -87,7 +83,7 @@ export function SectionSolution() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center h-full">
+          <div className="hidden md:flex items-center justify-center">
             <Image
               src={overview}
               alt="Casa Overview"
