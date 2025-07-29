@@ -14,7 +14,7 @@ export function SectionTraction() {
             <Card className="min-h-[365px]">
               <h2 className="text-2xl">Honorarios mensuales</h2>
 
-              <span className="mt-6 mb-4 font-mono text-[60px] md:text-[80px] block">
+              <span className="mt-6 mb-4 font-mono text-4xl sm:text-5xl md:text-[80px] block">
                 USD 950.-
               </span>
 
@@ -40,7 +40,7 @@ export function SectionTraction() {
           </div>
 
           <div className="ml-auto w-full max-w-[820px] h-full border border-border p-6 bg-[#0C0C0C] relative flex flex-col justify-center">
-            <h2 className="mb-8 block text-[38px] font-medium">
+            <h2 className="mb-8 block text-2xl md:text-[38px] font-medium">
               Condiciones importantes
             </h2>
 

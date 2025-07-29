@@ -22,7 +22,7 @@ export function SectionSolution() {
                   />
                   <h2 className="text-lg md:text-xl">Supervisión y Preparación</h2>
                 </div>
-                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
+                <div className="text-[#878787] text-xs md:text-sm text-left space-y-1">
                   <div>• Optimización integral de la casa antes de cada llegada.</div>
                   <div>• Verificación de limpieza realizada por Margarita.</div>
                   <div>• Confirmación de stock y orden doméstico esencial.</div>
@@ -39,7 +39,7 @@ export function SectionSolution() {
                   />
                   <h2 className="text-lg md:text-xl">Control Ambiental</h2>
                 </div>
-                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
+                <div className="text-[#878787] text-xs md:text-sm text-left space-y-1">
                   <div>• Control de humedad y ventilación de ambientes.</div>
                   <div>• Optimización horaria del uso de bomba de piscina.</div>
                   <div>• Control de iluminación exterior.</div>
@@ -57,7 +57,7 @@ export function SectionSolution() {
                   />
                   <h2 className="text-lg md:text-xl">Coordinación Técnica</h2>
                 </div>
-                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
+                <div className="text-[#878787] text-xs md:text-sm text-left space-y-1">
                   <div>• Supervisión de jardinería y piscina.</div>
                   <div>• Control de fumigación / plagas.</div>
                   <div>• Coordinación de servicios técnicos frente a desgastes normales de una casa.</div>
@@ -73,7 +73,7 @@ export function SectionSolution() {
                   />
                   <h2 className="text-lg md:text-xl">Gestión de Personal</h2>
                 </div>
-                <div className="text-[#878787] text-[11px] md:text-xs text-left space-y-1">
+                <div className="text-[#878787] text-xs md:text-sm text-left space-y-1">
                   <div>• Supervisión del personal tercerizado.</div>
                   <div>• Coordinación operativa de tareas.</div>
                   <div>• Relacionamiento correcto con proveedores y terceros.</div>

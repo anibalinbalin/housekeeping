@@ -15,9 +15,7 @@ export function SectionTeam() {
           <div className="space-y-8">
             <Card className="items-start space-y-0">
               <GearIcon
-                width={76}
-                height={76}
-                className="mb-4"
+                className="mb-4 w-12 h-12 md:w-[76px] md:h-[76px]"
                 style={{ color: "#e6e5e5" }}
               />
 
@@ -32,9 +30,7 @@ export function SectionTeam() {
 
             <Card className="items-start space-y-0">
               <ChatBubbleIcon
-                width={76}
-                height={76}
-                className="mb-4"
+                className="mb-4 w-12 h-12 md:w-[76px] md:h-[76px]"
                 style={{ color: "#e6e5e5" }}
               />
 
@@ -58,7 +54,7 @@ export function SectionTeam() {
             />
           </div>
           <div className="ml-auto w-full space-y-8 items-center flex">
-            <h2 className="text-[48px] font-medium text-center leading-tight">
+            <h2 className="text-2xl md:text-[48px] font-medium text-center leading-tight">
               &ldquo;Mi compromiso es que La Siciliana este siempre acondicionada, funcional y óptima para su disfrute todo el año.&rdquo;
             </h2>
           </div>
