@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
 const ReactHlsPlayer = dynamic(() => import("react-hls-player"), {
@@ -18,11 +18,11 @@ type Props = {
 };
 
 export function SectionDemo({ playVideo }: Props) {
-  const playerRef = useRef<HTMLVideoElement>();
+  const playerRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setPlaying] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     if (isPlaying) {
       playerRef.current?.pause();
     } else {
@@ -30,7 +30,7 @@ export function SectionDemo({ playVideo }: Props) {
     }
 
     setPlaying((prev) => !prev);
-  };
+  }, [isPlaying]);
 
   const handleRestart = () => {
     if (playerRef.current) {
