@@ -10,9 +10,11 @@ import {
 export function SectionSubscription() {
   return (
     <div className="min-h-screen relative w-screen">
+      <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
+        <span>TAREAS MENSUALES</span>
+      </div>
       <div className="flex flex-col min-h-screen justify-center container">
         <div className="px-4 md:px-0 max-w-6xl mx-auto w-full">
-          <h2 className="text-lg md:text-2xl font-semibold mb-4 md:mb-6 text-center">TAREAS MENSUALES</h2>
           <p className="text-sm md:text-lg mb-6 md:mb-8 text-center">
             Tabla borrador presentando un demo de las tareas a gestionar.
           </p>
