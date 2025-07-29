@@ -18,9 +18,25 @@ type Props = {
 };
 
 export function SectionDemo({ playVideo }: Props) {
-  const playerRef = useRef();
+  const playerRef = useRef<HTMLVideoElement>();
   const [isPlaying, setPlaying] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const togglePlay = () => {
+    if (isPlaying) {
+      playerRef.current?.pause();
+    } else {
+      playerRef.current?.play();
+    }
+
+    setPlaying((prev) => !prev);
+  };
+
+  const handleRestart = () => {
+    if (playerRef.current) {
+      playerRef.current.currentTime = 0;
+    }
+  };
 
   useHotkeys(
     "space",
@@ -46,28 +62,14 @@ export function SectionDemo({ playVideo }: Props) {
         togglePlay();
       }
     }
-  }, [playVideo, isDesktop]);
-
-  const handleRestart = () => {
-    playerRef.current.currentTime = 0;
-  };
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      playerRef.current?.pause();
-    } else {
-      playerRef.current?.play();
-    }
-
-    setPlaying((prev) => !prev);
-  };
+  }, [playVideo, isDesktop, togglePlay]);
 
   return (
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Demo - Version 0.5 (Private beta)</span>
         <span className="text-[#878787]">
-          <Link href="/">midday.ai</Link>
+          Demo
         </span>
       </div>
       <div className="flex flex-col min-h-screen justify-center container">
